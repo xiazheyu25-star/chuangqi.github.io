@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创梦·网页设计大赛 </title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --light: #f8f9fa;
+            --dark: #212529;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f0f5ff;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--primary), #1a2530);
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .content {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            padding: 35px;
+            margin-bottom: 30px;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        h2 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--accent);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        h2:before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 24px;
+            background: var(--accent);
+            margin-right: 12px;
+            border-radius: 4px;
+        }
+        
+        ul {
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            position: relative;
+        }
+        
+        li:before {
+            content: "✓";
+            color: var(--accent);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+        
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+        
+        .award-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--accent);
+        }
+        
+        .award-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(52, 152, 219, 0.2);
+        }
+        
+        .award-card h3 {
+            color: var(--accent);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .schedule-item {
+            background: #e3f2fd;
+            border-left: 4px solid var(--accent);
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-radius: 0 6px 6px 0;
+        }
+        
+        .cta-section {
+            text-align: center;
+            background: linear-gradient(120deg, var(--primary), #1a2530);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 25px;
+            line-height: 1.8;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 14px 35px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            letter-spacing: 0.5px;
+        }
+        
+        .btn:hover {
+            background: #2c84c2;
+            transform: scale(1.03);
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: var(--primary);
+            font-style: italic;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>关于举办“创梦·网页设计大赛”的通知</h1>
+        <p class="subtitle">深化实践应用 · 激发创新思维 · 积累行业经验</p>
+    </header>
+
+    <div class="content">
+        <div class="section">
+            <p>全体同学：</p>
+            <p>经过一学期的前端技术学习与实践，大家已系统掌握HTML、CSS、JavaScript等核心知识，并具备独立开发网页的能力。为深化实践应用、激发创新思维，特举办“创梦·网页设计大赛”，现将具体事宜通知如下：</p>
+        </div>
+
+        <div class="section">
+            <h2>一、比赛形式</h2>
+            <ul>
+                <li>以小组为单位参赛（每组3-5人），设计响应式网页作品。</li>
+                <li>作品须原创，包含完整前端代码及设计说明文档。</li>
+                <li>比赛将邀请企业技术总监、校内优秀学长组成评委团，从创意性、技术实现、用户体验等维度进行综合评分。</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>二、奖励设置</h2>
+            <div class="awards-grid">
+                <div class="award-card">
+                    <h3>一等奖</h3>
+                    <p>企业正式实习证明（由合作企业签发，含公章）</p>
+                </div>
+                <div class="award-card">
+                    <h3>二等奖</h3>
+                    <p>荣誉证书</p>
+                </div>
+                <div class="award-card">
+                    <h3>三等奖</h3>
+                    <p>奖状</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>三、时间安排</h2>
+            <div class="schedule-item">
+                <strong>作品提交：</strong>结课后以及寒假期间
+            </div>
+            <div class="schedule-item">
+                <strong>答辩评审：</strong>开学回来后另行通知
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <p>本次大赛是展示技术实力、积累行业经验的绝佳平台，优秀作品将推荐至合作企业参与实际项目。期待大家正式对待，用代码定义未来！</p>
+            <!-- <a href="#" class="btn">立即报名（扫码组队）</a> -->
+        </div>
+
+       <!-- <div class="section">
+            <p><strong>咨询联系：</strong>社团负责人李明（电话：138XXXX1234；微信：webcontest）</p>
+        </div> -->
+    </div>
+
+    <footer>
+        <p>特此通知。</p>
+        
+    </footer>
+</body>
+</html>
